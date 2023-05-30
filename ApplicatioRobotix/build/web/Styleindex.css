@@ -1,0 +1,100 @@
+body {
+  background-color: #f2f2f2;
+}
+
+.parallax_section1 {
+  /* Estilos de la sección */
+  height: 400px;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.botonA {
+  padding: 12px;
+  background-color: #f2f2f2;
+  color: #000;
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.botonA:hover {
+  background-color: #000;
+  color: #fff;
+  outline: 2px solid #9c27b0; /* Cambiar el color del contorno a morado */
+}
+
+.botonA:active {
+  background-color: #3e8e41;
+  transform: translateY(1px);
+}
+
+.animatedButton {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInButton 0.5s forwards;
+}
+
+@keyframes fadeInButton {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animatedText {
+  /* Estilos del texto */
+  font-size: 70px;
+  font-weight: bold;
+  color: #000; /* Color negro */
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fadeInText 2s forwards;
+  text-align: center;
+}
+
+@keyframes fadeInText {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.containerPrincipalI {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.containerPrincipalI {
+  border: solid 1px rgba(0, 0, 0, 0.2); /* Borde negro transparente */
+}
+
+.botonA {
+  font-family: sans-serif;
+  text-transform: uppercase;
+  outline: none;
+  background-color: #f2f2f2;
+  border-color: #222; /* Color negro */
+  width: 100%;
+  padding: 20px;
+  color: #000; /* Color negro */
+  font-size: 14px;
+  transition: all 1s ease;
+  cursor: pointer;
+}
